@@ -8,7 +8,7 @@ import GridBackground from "./background/grid-background";
 export default function CTA() {
   return (
     <section id="cta">
-      <Container>
+      <Container className="py-10 md:py-20 lg:py-32">
         <div className="border p-2 rounded-3xl bg-secondary">
           <div className="border rounded-2xl bg-background overflow-hidden flex flex-col items-center justify-center p-4 gap-8 h-80 relative">
             <Heading variant="big">Want to get started?</Heading>

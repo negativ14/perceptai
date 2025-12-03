@@ -15,9 +15,9 @@ export default function Hero() {
     <section id="hero">
       <Container className="flex flex-col gap-20 lg:gap-44 py-20 lg:py-40 relative">
         <div className="flex flex-col gap-4">
-          <Heading variant="big" as="h1" className="text-center">
+          <Heading variant="big" as="h1" className="text-center lg:leading-18">
             Recognize Anything <br />
-            <span className="py-4 text-2xl md:text-4xl font-semibold tracking-tight font-manrope">
+            <span className="py-4 text-2xl md:text-4xl lg:text-6xl font-semibold tracking-tight font-manrope">
               with our <span className="text-compliment">Vision AI</span>
             </span>
           </Heading>
