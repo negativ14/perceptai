@@ -10,18 +10,24 @@ export default function Features() {
     <section id="features">
       <Container className="py-10 md:py-20 lg:py-32">
         <div className="flex flex-col md:flex-row items-center gap-8 relative">
-          <div className="flex flex-col gap-12 max-w-2xl">
+          <div className="flex flex-col justify-center gap-8 md:gap-12 max-w-2xl relative z-10 self-start md:self-center">
             <Heading className="" variant="big">
               From Plain Text <br />
               To Precise Direction
             </Heading>
 
             <div className="flex flex-wrap gap-6 max-w-sm">
-              <Badge icon={Zap} className="-rotate-4">
+              <Badge
+                icon={Zap}
+                className="-rotate-4 hover:rotate-0 transition-transform duration-200 ease-in"
+              >
                 Zero-Shot AI
               </Badge>
               <Badge icon={Rocket}>Instant Deploy </Badge>
-              <Badge icon={Target} className="rotate-3">
+              <Badge
+                icon={Target}
+                className="rotate-3 hover:rotate-0 transition-transform duration-200 ease-in"
+              >
                 No Training
               </Badge>
             </div>

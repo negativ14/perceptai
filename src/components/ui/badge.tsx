@@ -17,7 +17,7 @@ export default function Badge({
       className={cn("flex items-center gap-3 bg-foreground rounded-md w-fit pr-4 pl-2 py-1", className)}
     >
       <div className="bg-background rounded-full p-1">
-        <Icon className={cn("size-4 lg:size-6 text-foreground shrink-0", iconClassName)} />
+        <Icon className={cn("size-4 lg:size-5 text-compliment shrink-0", iconClassName)} />
       </div>{" "}
       <span className="font-mono text-xs md:text-sm lg:text-md font-semibold text-background">{children}</span>
     </div>
