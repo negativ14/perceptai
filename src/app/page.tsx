@@ -1,3 +1,13 @@
+import Features from "@/components/features";
+import Hero from "@/components/hero";
+import ModelTemplate from "@/components/model-template";
+
 export default function Home() {
-  return <div>hii</div>;
+  return (
+    <main>
+      <Hero />
+      <Features />
+      <ModelTemplate />
+    </main>
+  );
 }

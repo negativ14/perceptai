@@ -17,8 +17,8 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="border-b">
-      <Container className="">
+    <header className="border-b bg-background z-10 relative">
+      <Container className="overflow-hidden">
         <div className="hidden md:flex items-center justify-between">
           <Logo />
           <div className="flex items-center gap-6 font-manrope">
