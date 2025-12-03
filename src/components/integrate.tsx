@@ -4,7 +4,6 @@ import Heading from "./heading";
 import SubHeading from "./sub-heading";
 import { Button } from "./ui/button";
 import { useState } from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { currentCode } from "@/lib/constants";
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { duotoneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
@@ -13,6 +12,11 @@ import { useEffect } from "react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import GridBackground from "./background/grid-background";
+import dynamic from "next/dynamic";
+const SyntaxHighlighter = dynamic(
+  () => import("react-syntax-highlighter").then(mod => mod.Prism),
+  { ssr: false }
+);
 
 export default function Integrate() {
   const [code, setCode] = useState<"Python" | "Javascript">("Python");
