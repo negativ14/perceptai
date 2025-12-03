@@ -3,6 +3,8 @@ import { Manrope, Raleway } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import ThemeProvider from "@/provider/theme-provider";
+import CTA from "@/components/cta";
+import Footer from "@/components/footer";
 
 const manRope = Manrope({
   variable: "--font-manrope",
@@ -42,6 +44,8 @@ export default function RootLayout({
         >
           <Navbar />
           <main>{children}</main>
+          <CTA />
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

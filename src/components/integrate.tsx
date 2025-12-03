@@ -1,9 +1,7 @@
 "use client";
-import { FileCode } from "lucide-react";
 import Container from "./container";
 import Heading from "./heading";
 import SubHeading from "./sub-heading";
-import Badge from "./ui/badge";
 import { Button } from "./ui/button";
 import { useState } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -14,6 +12,7 @@ import { useTheme } from "next-themes";
 import { useEffect } from "react";
 import { motion } from "motion/react";
 import Link from "next/link";
+import GridBackground from "./background/grid-background";
 
 export default function Integrate() {
   const [code, setCode] = useState<"Python" | "Javascript">("Python");
@@ -31,7 +30,7 @@ export default function Integrate() {
 
   return (
     <section id="integrate">
-      <Container className="flex flex-col lg:flex-row gap-8 py-10 md:py-20 lg:py-32">
+      <Container className="flex flex-col lg:flex-row gap-10 md:gap-20 py-10 md:py-20 lg:py-32 relative">
         <div className="flex-1 h-full w-full">
           <div className="border rounded-3xl bg-secondary relative z-10 p-2">
             <div className="border rounded-2xl bg-background">
@@ -105,6 +104,10 @@ export default function Integrate() {
               View API Docs
             </Link>
           </div>
+        </div>
+
+        <div className="h-100 w-120 overflow-hidden absolute top-80 lg:top-40 right-50 md:-left-40 lg:left-80 mask-radial-to-90% -z-10">
+          <GridBackground className="bg-size-[40px_40px]" />
         </div>
       </Container>
     </section>

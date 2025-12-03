@@ -32,7 +32,7 @@ export default function Navbar() {
             </nav>
             <Link
               href={"https://playground.dragoneye.ai/"}
-              className="bg-primary text-white px-4 py-2 rounded-md font-medium hover:opacity-90 transition-all duration-200 active:scale-[0.96]"
+              className="bg-compliment text-white px-4 py-2 rounded-md font-medium hover:opacity-90 transition-all duration-200 active:scale-[0.96]"
             >
               Playground
             </Link>

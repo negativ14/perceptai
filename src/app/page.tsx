@@ -1,3 +1,5 @@
+import Blog from "@/components/blog";
+import FAQs from "@/components/faqs";
 import Features from "@/components/features";
 import Hero from "@/components/hero";
 import Integrate from "@/components/integrate";
@@ -10,6 +12,8 @@ export default function Home() {
       <Features />
       <ModelTemplate />
       <Integrate />
+      <Blog />
+      <FAQs />
     </main>
   );
 }

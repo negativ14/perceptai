@@ -18,7 +18,7 @@ export default function Hero() {
           <Heading variant="big" as="h1" className="text-center">
             Recognize Anything <br />
             <span className="py-4 text-2xl md:text-4xl font-semibold tracking-tight font-manrope">
-              with our <span className="text-primary">Vision AI</span>
+              with our <span className="text-compliment">Vision AI</span>
             </span>
           </Heading>
 

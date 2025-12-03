@@ -12,6 +12,7 @@ import {
   Volleyball,
 } from "lucide-react";
 import { motion } from "motion/react";
+import GridBackground from "./background/grid-background";
 
 const models = [
   { title: "Animals", icon: Panda },
@@ -25,7 +26,7 @@ const models = [
 export default function ModelTemplate() {
   return (
     <section id="model-template">
-      <Container className="flex flex-col gap-8 py-10 md:py-20">
+      <Container className="flex flex-col gap-8 py-10 md:py-20 relative overflow-hidden">
         <div className="flex flex-col gap-4">
           <Heading variant="big" className="md:text-center">
             Get started quick <br /> with Model Templates
@@ -56,6 +57,10 @@ export default function ModelTemplate() {
               <ModelBox icon={item.icon} title={item.title} />
             </motion.div>
           ))}
+        </div>
+
+        <div className="h-100 w-120 overflow-hidden absolute -top-20 right-50 md:-right-60 lg:right-50 mask-radial-to-90% -z-10">
+          <GridBackground className="bg-size-[40px_40px]" />
         </div>
       </Container>
     </section>
