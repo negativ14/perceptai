@@ -8,11 +8,6 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 
-const navLinks = [
-  { title: "Pricing", href: "/pricing" },
-  { title: "Docs", href: "https://docs.dragoneye.ai/" },
-];
-
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -23,19 +18,16 @@ export default function Navbar() {
           <Logo />
           <div className="flex items-center gap-6 font-manrope">
             <ModeToggle />
-            <nav className="flex items-center gap-6">
-              {navLinks.map((item, index) => (
-                <Link href={item.href} key={index}>
-                  {item.title}
-                </Link>
-              ))}
+            <nav className="flex items-center gap-8">
+              <Link href={"https://docs.dragoneye.ai/"}>Docs</Link>
+
+              <Link
+                href={"https://playground.dragoneye.ai/"}
+                className="bg-compliment text-white px-4 py-2 rounded-md font-medium hover:opacity-90 transition-all duration-200 active:scale-[0.96]"
+              >
+                Playground
+              </Link>
             </nav>
-            <Link
-              href={"https://playground.dragoneye.ai/"}
-              className="bg-compliment text-white px-4 py-2 rounded-md font-medium hover:opacity-90 transition-all duration-200 active:scale-[0.96]"
-            >
-              Playground
-            </Link>
           </div>
         </div>
 
@@ -49,7 +41,11 @@ export default function Navbar() {
               variant={"ghost"}
               size={"icon"}
             >
-              {open ? <X /> : <Menu className="shrink-0" />}
+              {open ? (
+                <X className="shrink-0 size-4" />
+              ) : (
+                <Menu className="shrink-0 size-4" />
+              )}
             </Button>
           </div>
         </div>
@@ -63,11 +59,8 @@ export default function Navbar() {
               transition={{ duration: 0.2, ease: "easeInOut" }}
               className="flex flex-col gap-4"
             >
-              {navLinks.map((item) => (
-                <Link href={item.href} key={item.title}>
-                  {item.title}
-                </Link>
-              ))}
+              <Link href={"https://docs.dragoneye.ai/"}>Docs</Link>
+
               <Link
                 href={"https://playground.dragoneye.ai/"}
                 className="bg-primary text-white px-4 py-2 rounded-md font-medium hover:opacity-90 transition-all duration-200 active:scale-[0.96] w-fit"

@@ -12,7 +12,7 @@ const footerLinks = [
 export default function Footer() {
   return (
     <footer>
-      <Container className="flex flex-col gap-4 px-4 md:px-8 lg:px-16">
+      <Container className="flex flex-col gap-4 px-4 md:px-8 lg:px-16 pt-10 md:pt-20 lg:pt-32">
         <div className="flex flex-col md:flex-row gap-4 md:gap-20 lg:gap-50">
           <div className="flex flex-col gap-4">
             <Logo />
@@ -44,7 +44,7 @@ export function FooterLink({ title, list }: { title: string; list: string[] }) {
       <h2 className="font-manrope">{title}</h2>
       <div className="flex flex-col gap-2">
         {list.map((item) => (
-          <p className="text-sm text-muted-foreground font-mono" key={item}>
+          <p className="text-sm text-muted-foreground font-mono cursor-pointer w-fit" key={item}>
             {item}
           </p>
         ))}
