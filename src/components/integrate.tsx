@@ -103,7 +103,7 @@ export default function Integrate() {
             </SubHeading>
             <Link
               href={"https://docs.dragoneye.ai/"}
-              className="mt-2 bg-compliment md:w-fit rounded-md py-1.5 px-4 text-md font-medium hover:opacity-90"
+              className="mt-2 bg-compliment md:w-fit rounded-md py-1.5 px-4 text-md font-medium hover:opacity-90 w-fit"
             >
               View API Docs
             </Link>

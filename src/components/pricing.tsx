@@ -26,15 +26,15 @@ export default function Pricing() {
       <Container className="px-4 md:px-8 lg:px-16 py-10 md:py-20 lg:py-32 overflow-hidden">
         <div className="flex flex-col gap-10 md:gap-20">
           <div className="flex flex-col gap-4">
-            <Heading variant="big" className="md:text-center">
+            <Heading variant="big" className="text-center">
               Simple, Transparent Pricing
             </Heading>
-            <SubHeading variant="big" className="md:text-center md:mx-auto">
+            <SubHeading variant="big" className="text-center mx-auto">
               Start building with Vision AI today. No hidden fees, no surprises.
             </SubHeading>
           </div>
 
-          <div className="flex flex-col justify-center items-strech md:flex-row gap-4 md:gap-8">
+          <div className="flex flex-col justify-center items-strech mx-auto md:flex-row gap-4 md:gap-8">
             <PricingCard pricingPlan={pricingPlans[0]} plus={false} />
             <PricingCard pricingPlan={pricingPlans[1]} plus={true} />
           </div>
