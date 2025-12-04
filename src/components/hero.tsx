@@ -42,13 +42,13 @@ export default function Hero() {
           />
         </div>
 
-        <Doodle1 className="absolute top-15 left-30 lg:size-13 md:size-7 hidden md:block text-muted-foreground opacity-50" />
+        <Doodle1 className="absolute top-15 left-40 lg:size-13 md:size-7 hidden md:block text-muted-foreground opacity-50" />
         <Doodle2 className="absolute top-60 left-20 lg:size-10 md:size-5 hidden md:block text-muted-foreground opacity-50" />
         <Doodle3 className="absolute top-20 lg:size-12 md:size-6 right-40 hidden md:block text-muted-foreground opacity-50" />
-        <Doodle4 className="absolute top-50 left-70 lg:size-20 hidden lg:block text-muted-foreground opacity-50" />
-        <Doodle5 className="absolute top-60 right-60 lg:size-12 md:size-6 hidden md:block text-muted-foreground opacity-50" />
-        <Doodle6 className="absolute top-8 right-80 lg:size-12 md:size-7 hidden md:block text-muted-foreground opacity-50" />
-        <Doodle7 className="absolute top-5 left-100 lg:size-11 hidden lg:block text-muted-foreground opacity-50" />
+        <Doodle4 className="absolute top-80 left-70 lg:size-20 hidden lg:block text-muted-foreground opacity-50" />
+        <Doodle5 className="absolute top-80 right-60 lg:size-12 md:size-6 hidden md:block text-muted-foreground opacity-50" />
+        <Doodle6 className="absolute top-8 right-120 lg:size-12 md:size-7 hidden md:block text-muted-foreground opacity-50" />
+        <Doodle7 className="absolute top-25 left-120 lg:size-11 hidden lg:block text-muted-foreground opacity-50" />
 
         <div className="h-100 w-120 overflow-hidden absolute -top-60 lg:-top-50 right-0 mask-radial-to-90% ">
           <GridBackground className="bg-size-[40px_40px]" />

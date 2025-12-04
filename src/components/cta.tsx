@@ -8,7 +8,7 @@ import GridBackground from "./background/grid-background";
 export default function CTA() {
   return (
     <section id="cta">
-      <Container className="py-10 md:py-20 lg:py-32">
+      <Container className="py-10 md:py-20 lg:py-32 px-4 md:px-8 lg:px-16">
         <div className="border p-2 rounded-3xl bg-secondary">
           <div className="border rounded-2xl bg-background overflow-hidden flex flex-col items-center justify-center p-4 gap-8 h-80 relative">
             <Heading variant="big">Want to get started?</Heading>
@@ -17,7 +17,7 @@ export default function CTA() {
             </SubHeading>
             <Link
               href={"https://playground.dragoneye.ai/"}
-              className="flex items-center gap-2 bg-compliment rounded-md px-4 py-2 text-md font-medium"
+              className="flex items-center gap-2 bg-compliment text-white rounded-md px-4 py-2 text-md font-medium"
             >
               Go to PlayGround <ArrowRight className="size-4" />
             </Link>

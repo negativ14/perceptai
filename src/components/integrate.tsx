@@ -34,7 +34,7 @@ export default function Integrate() {
 
   return (
     <section id="integrate">
-      <Container className="flex flex-col lg:flex-row gap-10 md:gap-20 py-10 md:py-20 lg:py-32 relative">
+      <Container className="flex flex-col-reverse lg:flex-row gap-10 md:gap-20 py-10 md:py-20 lg:py-32 relative px-4 md:px-8 lg:px-16">
         <div className="flex-1 h-full w-full">
           <div className="border rounded-3xl bg-secondary relative z-10 p-2">
             <div className="border rounded-2xl bg-background">

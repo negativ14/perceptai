@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <header className="border-b bg-background z-10 relative">
-      <Container className="overflow-hidden">
+      <Container className="overflow-hidden px-4 md:px-8 lg:px-16">
         <div className="hidden md:flex items-center justify-between">
           <Logo />
           <div className="flex items-center gap-6 font-manrope">

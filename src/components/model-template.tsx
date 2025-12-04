@@ -26,7 +26,7 @@ const models = [
 export default function ModelTemplate() {
   return (
     <section id="model-template">
-      <Container className="flex flex-col gap-8 py-10 md:py-20 relative overflow-hidden">
+      <Container className="flex flex-col gap-8 py-10 md:py-20 relative overflow-hidden px-4 md:px-8 lg:px-16">
         <div className="flex flex-col gap-4">
           <Heading variant="big" className="md:text-center">
             Get started quick <br /> with Model Templates

@@ -8,7 +8,7 @@ import GridBackground from "./background/grid-background";
 export default function Features() {
   return (
     <section id="features">
-      <Container className="py-10 md:py-20 lg:py-32">
+      <Container className="py-10 md:py-20 lg:py-32 px-4 md:px-8 lg:px-16">
         <div className="flex flex-col md:flex-row items-center gap-8 relative">
           <div className="flex flex-col justify-center gap-8 md:gap-12 max-w-2xl relative z-10 self-start md:self-center">
             <Heading className="" variant="big">
@@ -54,7 +54,7 @@ export default function Features() {
             </div>
           </div>
 
-          <div className="flex-1 bg-secondary h-full w-full p-2 rounded-3xl aspect-square">
+          <div className="flex-1 border bg-secondary h-full w-full p-2 rounded-3xl aspect-square">
             <video
               src={
                 "https://dragoneye.ai/videos/ny_construction_trimmed_web_1.mp4"
@@ -67,7 +67,7 @@ export default function Features() {
             />
           </div>
 
-          <div className="h-100 w-120 overflow-hidden absolute opacity-50 md:opacity-100 top-0 lg:-top-60 right-0 mask-radial-to-90% ">
+          <div className="h-100 w-120 overflow-hidden absolute opacity-50 md:opacity-100 top-0 lg:-top-60 right-0 mask-radial-to-90% -z-10">
             <GridBackground className="bg-size-[40px_40px]" />
           </div>
 

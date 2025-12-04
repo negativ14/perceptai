@@ -7,12 +7,12 @@ import blog from "@/assets/images/blog.png";
 export default function Blog() {
   return (
     <section id="blog">
-      <Container className="overflow-hidden relative py-10 md:py-20 lg:py-32 flex flex-col gap-6 md:gap-10 lg:gap-20">
+      <Container className="overflow-hidden relative py-10 md:py-20 lg:py-32 flex flex-col gap-6 md:gap-10 lg:gap-20 px-4 md:px-8 lg:px-16">
         <div className="flex flex-col gap-4">
           <Heading variant="big" className="md:text-center">
             Our Blog
           </Heading>
-          <SubHeading variant="big" className="md:mx-auto lg:max-w-2xl">
+          <SubHeading variant="big" className="md:mx-auto lg:max-w-2xl md:text-center">
             Insights, guides, and best practices for Vision AI and computer
             vision
           </SubHeading>
@@ -22,7 +22,7 @@ export default function Blog() {
           <div className="border rounded-2xl bg-background flex flex-col lg:flex-row gap-4 p-4">
             <div className="flex flex-col md:justify-center gap-4">
               <Heading>A Guide to Bounding Box Formats</Heading>
-              <SubHeading>
+              <SubHeading className="md:min-w-full min-w-full">
                 Learn the most common bounding box formats used in computer
                 vision, including COCO, YOLO, and Pascal VOC. This quick guide
                 explains how bounding boxes represent objects in images, the key
