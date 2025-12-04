@@ -62,14 +62,14 @@ export function PricingCard({
         <div className="flex flex-col items-center gap-8">
           <div className="flex flex-col gap-2">
             <Heading className="text-center">{pricingPlan.title}</Heading>
-            <p className="text-center bg-linear-to-br from-yellow-400 via-yellow-200 to-amber-500 bg-clip-text text-transparent">
+            <p className="text-center dark:bg-linear-to-br dark:from-yellow-400 dark:via-yellow-200 dark:to-amber-500 bg-linear-to-br from-yellow-400 to-amber-500 bg-clip-text text-transparent">
               {pricingPlan.subtitle}
             </p>
             <p className="text-center max-w-xs">{pricingPlan.description}</p>
           </div>
 
           <div>
-            <Heading className="bg-linear-to-br from-yellow-400 via-yellow-200 to-amber-500 w-fit bg-clip-text text-transparent">
+            <Heading className="dark:bg-linear-to-br dark:from-yellow-400 dark:via-yellow-200 dark:to-amber-500 bg-linear-to-br from-yellow-400 to-amber-500 w-fit bg-clip-text text-transparent">
               {pricingPlan.offer}
             </Heading>
             <p className="text-center">{pricingPlan.offerCondition}</p>
@@ -98,7 +98,7 @@ export function PricingCard({
           className={cn(
             "w-full",
             plus
-              ? "bg-linear-to-br from-yellow-400 to-amber-500 text-white hover:opacity-90"
+              ? "dark:bg-linear-to-br dark:from-yellow-400 dark:via-yellow-200 dark:to-amber-500 bg-linear-to-br from-yellow-400 to-amber-500 text-black hover:opacity-90"
               : "bg-foreground text-background hover:bg-foreground/80"
           )}
         >
@@ -151,7 +151,7 @@ export function PriceCalculator() {
 
           <div className="flex items-center justify-between pt-2 border-t">
             <h2>Total Cost</h2>
-            <p className="text-2xl bg-linear-to-br from-yellow-400 via-yellow-200 to-amber-500 bg-clip-text text-transparent">
+            <p className="text-2xl dark:bg-linear-to-br dark:from-yellow-400 dark:via-yellow-200 dark:to-amber-500 bg-linear-to-br from-yellow-400 to-amber-500 bg-clip-text text-transparent">
               ${totalCost.toFixed(2)}
             </p>
           </div>
