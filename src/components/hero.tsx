@@ -13,7 +13,7 @@ import GridBackground from "./background/grid-background";
 export default function Hero() {
   return (
     <section id="hero">
-      <Container className="flex flex-col justify-center gap-20 lg:gap-44 py-20 lg:py-40 relative">
+      <Container className="flex flex-col justify-center items-center gap-20 lg:gap-44 py-20 lg:py-40 relative">
         <div className="flex flex-col gap-4">
           <Heading variant="big" as="h1" className="text-center lg:leading-18">
             Recognize Anything <br />
