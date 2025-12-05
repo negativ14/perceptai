@@ -55,16 +55,18 @@ export default function Features() {
           </div>
 
           <div className="flex-1 border bg-secondary h-full w-full p-2 rounded-3xl aspect-square">
-            <video
-              src={
-                "https://dragoneye.ai/videos/ny_construction_trimmed_web_1.mp4"
-              }
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="border rounded-2xl object-cover h-full"
-            />
+            <div className="border rounded-2xl">
+              <video
+                src={
+                  "https://dragoneye.ai/videos/ny_construction_trimmed_web_1.mp4"
+                }
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="rounded-2xl object-cover h-full"
+              />
+            </div>
           </div>
 
           <div className="h-100 w-120 overflow-hidden absolute opacity-50 md:opacity-100 top-0 lg:-top-60 right-0 mask-radial-to-90% -z-10">

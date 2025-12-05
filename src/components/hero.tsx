@@ -32,14 +32,16 @@ export default function Hero() {
           </SubHeading>
         </div>
         <div className="border aspect-video rounded-3xl p-2 bg-secondary relative z-10 select-none">
-          <video
-            src={"https://dragoneye.ai/videos/bg-av1.mp4"}
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="border rounded-2xl object-cover"
-          />
+          <div className="border rounded-2xl h-full">
+            <video
+              src={"https://dragoneye.ai/videos/bg-av1.mp4"}
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="object-cover rounded-2xl"
+            />
+          </div>
         </div>
 
         <Doodle1 className="absolute top-15 left-40 lg:size-13 md:size-7 hidden md:block text-muted-foreground opacity-20" />
