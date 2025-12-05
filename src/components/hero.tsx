@@ -31,8 +31,8 @@ export default function Hero() {
             required.
           </SubHeading>
         </div>
-        <div className="border aspect-video rounded-3xl p-2 bg-secondary relative z-10 select-none">
-          <div className="border rounded-2xl h-full">
+        <div className="border aspect-video rounded-3xl p-2 bg-secondary relative z-10 select-none flex">
+          <div className="border rounded-2xl h-full overflow-hidden">
             <video
               src={"https://dragoneye.ai/videos/bg-av1.mp4"}
               autoPlay

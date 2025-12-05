@@ -54,8 +54,8 @@ export default function Features() {
             </div>
           </div>
 
-          <div className="flex-1 border bg-secondary h-full w-full p-2 rounded-3xl aspect-square">
-            <div className="border rounded-2xl">
+          <div className="flex-1 border bg-secondary h-full w-full p-2 rounded-3xl aspect-square flex">
+            <div className="border rounded-2xl overflow-hidden">
               <video
                 src={
                   "https://dragoneye.ai/videos/ny_construction_trimmed_web_1.mp4"
