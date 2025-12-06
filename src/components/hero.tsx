@@ -31,10 +31,13 @@ export default function Hero() {
             required.
           </SubHeading>
         </div>
-        <div className="border aspect-video rounded-3xl p-2 bg-secondary relative z-10 select-none flex">
+        <div className="border aspect-video rounded-3xl p-2 bg-secondary relative z-10 select-none flex w-full">
+          <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 text-center">
+            If this is empty that means <br /> video is not playing, not my fault, curse the provider.
+          </p>
           <div className="border rounded-2xl h-full min-w-full overflow-hidden">
             <video
-              src={"https://dragoneye.ai/videos/bg-av1.mp4"}
+              src={"https://dragoneye.ai/videos/bg-av1.mp"}
               autoPlay
               muted
               loop
