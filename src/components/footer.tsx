@@ -14,9 +14,9 @@ export default function Footer() {
     <footer>
       <Container className="flex flex-col gap-4 px-4 md:px-8 lg:px-16 pt-10 md:pt-20 lg:pt-32">
         <div className="flex flex-col md:flex-row gap-4 md:gap-20 lg:gap-50">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-2">
             <Logo />
-            <SubHeading className="lg:text-md max-w-xs md:max-w-[200px] lg:max-w-[200px]">
+            <SubHeading variant="small" className="lg:text-md max-w-xs md:max-w-[200px] lg:max-w-[200px]">
               Build vision intelligence in minutes. No training data required.
             </SubHeading>
             <span className="flex flex-col gap-2">

@@ -40,7 +40,7 @@ export default function Hero() {
           </p>
           <div className="border rounded-2xl h-full min-w-full overflow-hidden">
             <video
-              src={"https://dragoneye.ai/videos/bg-av1.mp4"}
+              src={"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"}
               autoPlay
               muted
               loop

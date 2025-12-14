@@ -16,11 +16,11 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "Dragoneye",
+  title: "PerceptAI",
   description:
-    "Dragoneye is a startup (backed by Y Combinator, Winter 2024 batch) that builds a computer-vision platform for image & live video (or video input) object detection and custom model creation — with minimal technical overhead.",
+    "PerceptAI is a vision intelligence platform that helps teams build, test, and deploy object recognition models for images and video in minutes — without complex training pipelines or heavy setup.",
   icons: {
-    icon: "/logo_img.png",
+    icon: "/favicon.png",
   },
 };
 

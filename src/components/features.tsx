@@ -64,7 +64,7 @@ export default function Features() {
             <div className="border rounded-2xl overflow-hidden">
               <video
                 src={
-                  "https://dragoneye.ai/videos/ny_construction_trimmed_web_1.mp4"
+                  "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
                 }
                 autoPlay
                 muted

@@ -4,7 +4,10 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactCompiler: true,
   images: {
-    remotePatterns: [{ protocol: "https", hostname: "dragoneye.ai" }],
+    remotePatterns: [
+      { protocol: "https", hostname: "dragoneye.ai" },
+      { protocol: "https", hostname: "res.cloudinary.com" },
+    ],
   },
 };
 

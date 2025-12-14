@@ -37,14 +37,18 @@ export default function Blog() {
               </p>
             </div>
 
-            <div className="flex-1 rounded-[6px] overflow-hidden min-h-full w-auto">
+            <div className="flex-1 rounded-xl overflow-hidden min-h-full w-auto relative">
               <Image
-                src={blog}
+                src={
+                  "https://res.cloudinary.com/dag2hnynz/image/upload/v1735893335/jfj1rmvmy3hh7hvvweru.jpg"
+                }
                 alt="image blog"
-                height={100}
-                width={100}
-                className="w-full h-auto object-cover"
+                height={1600}
+                width={900}
+                className="w-full h-auto object-cover "
+                priority
               />
+              <div className="absolute inset-0 ring-1 ring-inset ring-foreground/10 rounded-xl" />
             </div>
           </div>
         </div>
