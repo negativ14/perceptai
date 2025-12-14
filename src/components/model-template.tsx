@@ -26,13 +26,13 @@ const models = [
 export default function ModelTemplate() {
   return (
     <section id="model-template">
-      <Container className="flex flex-col gap-8 py-10 md:py-20 relative overflow-hidden px-4 md:px-8 lg:px-16">
+      <Container className="flex flex-col gap-8 py-10 md:py-20 lg:py-32 relative overflow-hidden px-4 md:px-8 lg:px-16">
         <div className="flex flex-col gap-4">
-          <Heading variant="big" className="md:text-center">
-            Get started quick <br /> with Model Templates
+          <Heading className="md:text-center" variant="big">
+            Start Fast with Ready Models
           </Heading>
           <SubHeading className="md:mx-auto">
-            Pre-configured templates to jumpstart your AI model
+            Use pre-built categories to launch your vision model instantly.
           </SubHeading>
         </div>
 
@@ -59,7 +59,7 @@ export default function ModelTemplate() {
           ))}
         </div>
 
-        <div className="h-100 w-120 overflow-hidden absolute -top-20 right-50 md:-right-60 lg:right-50 mask-radial-to-90% -z-10">
+        <div className="h-100 w-120 overflow-hidden absolute -top-10 right-50 md:-right-60 lg:right-50 mask-radial-to-90% -z-10">
           <GridBackground className="bg-size-[40px_40px]" />
         </div>
       </Container>

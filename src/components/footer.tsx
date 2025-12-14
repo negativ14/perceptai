@@ -4,9 +4,9 @@ import SubHeading from "./sub-heading";
 import { YCombinator } from "@/assets/icons/ycombinator";
 
 const footerLinks = [
-  { title: "Product", list: ["Playground", "Pricing", "API Docs"] },
+  { title: "Product", list: ["Studio", "Plans", "Developer Docs"] },
   { title: "Company", list: ["Blog", "Contact"] },
-  { title: "Legal", list: ["Privacy", "Terms"] },
+  { title: "Legal", list: ["Privacy Policy", "Terms of Service"] },
 ];
 
 export default function Footer() {
@@ -17,8 +17,7 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <Logo />
             <SubHeading className="lg:text-md max-w-xs md:max-w-[200px] lg:max-w-[200px]">
-              Custom vision understanding models in minutes. No training data
-              needed.
+              Build vision intelligence in minutes. No training data required.
             </SubHeading>
             <span className="flex flex-col gap-2">
               backed by <YCLogo />
@@ -31,7 +30,7 @@ export default function Footer() {
           </div>
         </div>
         <h2 className="pt-6 pb-2 px-4 text-sm text-muted-foreground font-mono text-center border-t">
-          © 2025 Dragoneye. All rights reserved.
+          © 2026 PerceptAI. All rights reserved.
         </h2>
       </Container>
     </footer>
@@ -44,7 +43,10 @@ export function FooterLink({ title, list }: { title: string; list: string[] }) {
       <h2 className="font-manrope">{title}</h2>
       <div className="flex flex-col gap-2">
         {list.map((item) => (
-          <p className="text-sm text-muted-foreground font-mono cursor-pointer w-fit" key={item}>
+          <p
+            className="text-sm text-muted-foreground font-mono cursor-pointer w-fit"
+            key={item}
+          >
             {item}
           </p>
         ))}
@@ -56,7 +58,7 @@ export function FooterLink({ title, list }: { title: string; list: string[] }) {
 export function YCLogo() {
   return (
     <div className="bg-white border rounded-md overflow-hidden w-fit flex items-center gap-2 p-0.5 pr-1">
-      <YCombinator className="size-6 rounded"/>
+      <YCombinator className="size-6 rounded" />
       <p className="text-md text-orange-400 font-medium">Combinator</p>
     </div>
   );

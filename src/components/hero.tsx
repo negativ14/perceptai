@@ -16,9 +16,12 @@ export default function Hero() {
       <Container className="flex flex-col justify-center items-center gap-20 lg:gap-44 py-20 lg:py-40 relative">
         <div className="flex flex-col gap-4">
           <Heading variant="big" as="h1" className="text-center lg:leading-18">
-            Recognize Anything <br />
+            Real-Time Object Recognition <br />
             <span className="py-4 text-2xl md:text-4xl lg:text-6xl font-semibold tracking-tight font-manrope">
-              with our <span className="text-compliment">Vision AI</span>
+              powered by{" "}
+              <span className="dark:bg-linear-to-br dark:from-yellow-400 dark:via-yellow-200 dark:to-amber-500 bg-linear-to-br from-yellow-400 to-amber-500 bg-clip-text text-transparent">
+                Vision AI
+              </span>
             </span>
           </Heading>
 
@@ -26,14 +29,14 @@ export default function Hero() {
             variant="medium"
             className="text-center mx-auto tracking-tight"
           >
-            Build custom video detection models in under 5 minutes{" "}
-            <br className="hidden md:block" />— no annotation or ML work
-            required.
+            Deploy custom detection models in minutes{" "}
+            <br className="hidden md:block" />
+            —with zero labeling or ML expertise.
           </SubHeading>
         </div>
         <div className="border aspect-video rounded-3xl p-2 bg-secondary relative z-10 select-none flex w-full">
           <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 text-center">
-            If this is empty that means <br /> video is not playing, not my fault, curse the provider.
+            ( use this to show some message when video not playing)
           </p>
           <div className="border rounded-2xl h-full min-w-full overflow-hidden">
             <video

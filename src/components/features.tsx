@@ -10,10 +10,9 @@ export default function Features() {
     <section id="features">
       <Container className="py-10 md:py-20 lg:py-32 px-4 md:px-8 lg:px-16">
         <div className="flex flex-col md:flex-row items-center gap-8 relative">
-          <div className="flex flex-col justify-center gap-8 md:gap-12 max-w-2xl relative z-10 self-start md:self-center">
-            <Heading className="" variant="big">
-              From Plain Text <br />
-              To Precise Direction
+          <div className="flex flex-col justify-center gap-8 md:gap-12 lg:max-w-2xl relative z-10 self-start md:self-center md:max-w-sm">
+            <Heading variant="big">
+              From Simple Text <br /> to Accurate Detection
             </Heading>
 
             <div className="flex flex-wrap gap-6 max-w-sm">
@@ -21,34 +20,41 @@ export default function Features() {
                 icon={Zap}
                 className="-rotate-4 hover:rotate-0 transition-transform duration-200 ease-in"
               >
-                Zero-Shot AI
+                Zero-Shot Detection
               </Badge>
-              <Badge icon={Rocket}>Instant Deploy </Badge>
+              <Badge icon={Rocket}> Live in Seconds </Badge>
               <Badge
                 icon={Target}
                 className="rotate-3 hover:rotate-0 transition-transform duration-200 ease-in"
               >
-                No Training
+                No Fine-Tuning
               </Badge>
             </div>
 
             <div className="flex flex-col lg:flex-row lg:item-center gap-4">
               <div className="flex flex-col gap-2">
-                <Heading variant="small" className="text-compliment">
-                  Plain English Input
+                <Heading
+                  variant="small"
+                  className="dark:bg-linear-to-br dark:from-yellow-400 dark:via-yellow-200 dark:to-amber-500 bg-linear-to-br from-yellow-400 to-amber-500 w-fit bg-clip-text text-transparent"
+                >
+                  Natural Language Control
                 </Heading>
-                <SubHeading variant="small" className="md:max-w-sm lg:max-w-sm">
-                  Describe all the things you want to detect in just a few
-                  words.
+                <SubHeading variant="small" className="max-w-sm lg:max-w-md">
+                  Describe the target in everyday words. The platform interprets
+                  your request and applies it instantly to live or recorded
+                  video.
                 </SubHeading>
               </div>
               <div className="flex flex-col gap-2">
-                <Heading variant="small" className="text-compliment">
-                  Powerful Zero-Shot Models
+                <Heading
+                  variant="small"
+                  className="dark:bg-linear-to-br dark:from-yellow-400 dark:via-yellow-200 dark:to-amber-500 bg-linear-to-br from-yellow-400 to-amber-500 w-fit bg-clip-text text-transparent lg:max-w-sm"
+                >
+                  Instant Zero-Shot Models Built for Production
                 </Heading>
-                <SubHeading variant="small" className="md:max-w-sm lg:max-w-sm">
-                  No training required. Your models are customized and deployed
-                  in seconds.
+                <SubHeading variant="small" className="max-w-sm lg:max-w-md">
+                  Skip training entirely. Your detection models are generated
+                  and deployed almost immediately.
                 </SubHeading>
               </div>
             </div>

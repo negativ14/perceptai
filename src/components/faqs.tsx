@@ -17,7 +17,7 @@ export default function FAQs() {
             Frequently Asked Questions
           </Heading>
           <SubHeading variant="big" className="md:mx-auto">
-            Everything you need to know about pricing
+            Everything you need to understand our pricing
           </SubHeading>
         </div>
 
@@ -38,7 +38,7 @@ export default function FAQs() {
           ))}
 
           <Link
-            href="https://playground.dragoneye.ai/?contactForm"
+            href="/playground"
             className="bg-secondary flex flex-col rounded-xl p-6 w-full cursor-pointer hover:opacity-85 transition-all duration-300 ease-in-out"
           >
             <div className="flex items-center justify-between">
@@ -94,7 +94,7 @@ export function FAQ({
               ease: "easeInOut",
             }}
           >
-            <SubHeading className="font-medium">{answer}</SubHeading>
+            <SubHeading className="font-medium max-w-2xl">{answer}</SubHeading>
           </motion.div>
         )}
       </AnimatePresence>

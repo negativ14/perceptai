@@ -12,27 +12,32 @@ export default function Blog() {
           <Heading variant="big" className="md:text-center">
             Our Blog
           </Heading>
-          <SubHeading variant="big" className="md:mx-auto lg:max-w-2xl md:text-center">
-            Insights, guides, and best practices for Vision AI and computer
-            vision
+          <SubHeading
+            variant="big"
+            className="md:mx-auto lg:max-w-2xl md:text-center"
+          >
+            Articles, tutorials, and practical insights on vision systems and
+            visual AI.
           </SubHeading>
         </div>
 
         <div className="border bg-secondary rounded-3xl p-2">
           <div className="border rounded-2xl bg-background flex flex-col lg:flex-row gap-4 p-4">
             <div className="flex flex-col md:justify-center gap-4">
-              <Heading>A Guide to Bounding Box Formats</Heading>
-              <SubHeading className="md:min-w-full min-w-full">
-                Learn the most common bounding box formats used in computer
-                vision, including COCO, YOLO, and Pascal VOC. This quick guide
-                explains how bounding boxes represent objects in images, the key
-                format differences, and how to choose the right one for your
-                object detection projects.
+              <Heading variant="small">
+                Understanding Bounding Box Standards
+              </Heading>
+              <SubHeading className="max-w-lg">
+                An overview of popular bounding box formats like COCO, YOLO, and
+                Pascal VOC. Learn how object regions are represented, how
+                formats differ, and which one fits your detection workflow best.
               </SubHeading>
-              <p className="mt-4">February 18, 2025</p>
+              <p className="mt-4 dark:bg-linear-to-br dark:from-yellow-400 dark:via-yellow-200 dark:to-amber-500 bg-linear-to-br from-yellow-400 to-amber-500 w-fit bg-clip-text text-transparent">
+                January 14, 2026
+              </p>
             </div>
 
-            <div className="flex-1 rounded-[6px] overflow-hidden">
+            <div className="flex-1 rounded-[6px] overflow-hidden min-h-full w-auto">
               <Image
                 src={blog}
                 alt="image blog"

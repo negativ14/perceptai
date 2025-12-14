@@ -14,14 +14,14 @@ export default function SubHeading({
 }) {
   const variants = {
     big: "text-lg md:text-xl",
-    medium: "text-sm md:text-md lg:text-lg",
+    medium: "text-md md:text-lg",
     small: "text-xs md:text-sm",
   };
   const Tag = as;
   return (
     <Tag
       className={cn(
-        "text-muted-foreground max-w-sm md:max-w-md lg:max-w-xl font-mono",
+        "text-muted-foreground font-mono",
         variants[variant],
         className
       )}

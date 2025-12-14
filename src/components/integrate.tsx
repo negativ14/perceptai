@@ -14,7 +14,7 @@ import Link from "next/link";
 import GridBackground from "./background/grid-background";
 import dynamic from "next/dynamic";
 const SyntaxHighlighter = dynamic(
-  () => import("react-syntax-highlighter").then(mod => mod.Prism),
+  () => import("react-syntax-highlighter").then((mod) => mod.Prism),
   { ssr: false }
 );
 
@@ -92,25 +92,28 @@ export default function Integrate() {
         </div>
 
         <div className="flex flex-col gap-4 md:gap-8 justify-center">
-          <Heading>Integrate Easily</Heading>
-          <div className="flex flex-col gap-2">
-            <Heading variant="small" className="text-compliment">
-              Ship in Minutes
+          <Heading variant="big">Integrate Easily</Heading>
+          <div className="flex flex-col gap-2 md:gap-4">
+            <Heading
+              variant="small"
+              className="dark:bg-linear-to-br dark:from-yellow-400 dark:via-yellow-200 dark:to-amber-500 bg-linear-to-br from-yellow-400 to-amber-500 w-fit bg-clip-text text-transparent"
+            >
+              Go Live in Minutes
             </Heading>
             <SubHeading className="max-w-sm">
-              Our simple Python and Node packages that get you from idea to
-              production fast.
+              Lightweight Python and Node SDKs let you move from prototype to
+              production with minimal setup.
             </SubHeading>
             <Link
-              href={"https://docs.dragoneye.ai/"}
-              className="mt-2 bg-compliment md:w-fit rounded-md py-1.5 px-4 text-md font-medium hover:opacity-90 w-fit"
+              href={"/docs"}
+              className=" bg-compliment md:w-fit rounded-md py-1.5 px-4 text-md font-medium hover:opacity-90 w-fit dark:bg-linear-to-br dark:from-yellow-400 dark:via-yellow-200 dark:to-amber-500 bg-linear-to-br from-yellow-400 to-amber-500 dark:text-background"
             >
               View API Docs
             </Link>
           </div>
         </div>
 
-        <div className="h-100 w-120 overflow-hidden absolute top-80 lg:top-40 right-50 md:-left-40 lg:left-80 mask-radial-to-90% -z-10">
+        <div className="h-100 w-120 overflow-hidden absolute top-80 lg:top-40 right-50 md:-left-40 lg:left-96 mask-radial-to-90% -z-10">
           <GridBackground className="bg-size-[40px_40px]" />
         </div>
       </Container>

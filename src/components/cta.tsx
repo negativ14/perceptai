@@ -11,15 +11,17 @@ export default function CTA() {
       <Container className="py-10 md:py-20 lg:py-32 px-4 md:px-8 lg:px-16">
         <div className="border p-2 rounded-3xl bg-secondary">
           <div className="border rounded-2xl bg-background overflow-hidden flex flex-col items-center justify-center p-4 gap-8 h-80 relative">
-            <Heading variant="big">Want to get started?</Heading>
+            <Heading variant="big">Ready to start building?</Heading>
             <SubHeading variant="big" className="text-center">
-              Jump into our playground and start building with AI today
+              Explore the playground and begin creating AI-powered workflows
+              today
             </SubHeading>
             <Link
-              href={"https://playground.dragoneye.ai/"}
-              className="flex items-center gap-2 bg-compliment text-white rounded-md px-4 py-2 text-md font-medium"
+              href={"/playground"}
+              className="flex items-center gap-2 bg-compliment text-white rounded-md px-4 py-2 text-md font-medium dark:bg-linear-to-br dark:from-yellow-400 dark:via-yellow-200 dark:to-amber-500 bg-linear-to-br from-yellow-400 to-amber-500 md:w-fit dark:text-background"
             >
-              Go to PlayGround <ArrowRight className="size-4" />
+              Try it Now
+              <ArrowRight className="size-4" />
             </Link>
 
             <div className="h-100 w-120 overflow-hidden absolute -top-40 -right-60 md:-top-20 md:-right-50 mask-radial-to-90% ">

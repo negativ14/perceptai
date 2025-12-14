@@ -5,7 +5,7 @@ import Features from "@/components/features";
 import Hero from "@/components/hero";
 import Integrate from "@/components/integrate";
 import ModelTemplate from "@/components/model-template";
-import Pricing from "@/components/pricing";
+import Pricing from "@/components/pricing/pricing";
 
 export default function Home() {
   return (

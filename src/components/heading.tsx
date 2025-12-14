@@ -14,8 +14,8 @@ export default function Heading({
 }) {
   const variants = {
     big: "text-2xl md:text-4xl lg:text-6xl",
-    medium: "text-2xl md:text-4xl",
-    small: "text-xl md:text-2xl",
+    medium: "text-xl md:text-2xl lg:text-4xl",
+    small: "text-lg md:text-xl lg:text-2xl",
   };
   const Tag = as;
   return (
